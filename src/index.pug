@@ -5,8 +5,110 @@ head
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css", integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M", crossorigin="anonymous")
     link(rel="stylesheet", href="styles.css")
 
     title Document
 
 body
+    .navbar.navbar-expand-lg.navbar-dark.bg-dark
+        a.navbar-brand(href="") OldBoy Family
+        button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarSupportedContent", aria-controls="navbarSupportedContent", aria-expanded="false", aria-label="Toggle navigation")
+            span.navbar-toggler-icon
+
+        .collapse.navbar-collapse#navbarSupportedContent
+            form.form-inline
+                input.form-control(type="text", placeholder="Поиск" area-label="Поиск")
+                button.btn.btn-outline-info(type="submit") Искать
+
+    .container
+        nav.breadcrumb
+            a.breadcrumb-item(href="#") Главная
+            a.breadcrumb-item(href="#") Веб
+            span.breadcrumb-item.active(href="#") Баннеры
+
+    .container
+        .card-columns
+            .card
+                img.card-img-top(src="img/graduated.jpg", alt="Card image cap")
+                .card-body
+                    h4.card-title Баннер Выпускник
+                    p.card-text Иллюстрация для использования в социальных сетях. Скидка 20% для выпускников.
+                    p.text-muted Форматы: JPEG, PSD, AI
+                    a.btn.btn-primary(href="") Скачать архив
+
+                .card-footer
+                    a.badge.badge-secondary(href="#") Веб
+                    a.badge.badge-secondary(href="#") Квадратные
+                    a.badge.badge-secondary(href="#") ВКонтакте
+                    a.badge.badge-secondary(href="#") Баннер
+                    
+            .card
+                img.card-img-top(src="img/oldboy-bd.jpg", alt="Card image cap")
+                .card-body
+                    h4.card-title День рождения OldBoy
+                    p.card-text Иллюстрация для использования в социальных сетях. Один год барбершопу ОлдБой.
+                    p.text-muted Форматы: JPEG, PSD, AI
+                    a.btn.btn-primary(href="") Скачать архив
+
+                .card-footer
+                    a.badge.badge-pill.badge-secondary(href="#") Веб
+                    a.badge.badge-pill.badge-secondary(href="#") Квадратные
+                    a.badge.badge-pill.badge-secondary(href="#") ВКонтакте
+
+            .card
+                img.card-img-top(src="img/repost.jpg", alt="Card image cap")
+                .card-body
+                    h4.card-title Конкурс репостов
+                    p.card-text Баннер "конкурс репостов" для соцсетей
+                    p.text-muted Форматы: JPEG, AI
+                    a.btn.btn-primary(href="") Скачать архив
+
+                .card-footer
+                    a.badge.badge-pill.badge-secondary(href="#") Веб
+                    a.badge.badge-pill.badge-secondary(href="#") Квадратные 
+                    a.badge.badge-pill.badge-secondary(href="#") ВКонтакте
+
+            .card
+                img.card-img-top(src="img/oldboy-bd.jpg", alt="Card image cap")
+                .card-body
+                    h4.card-title День рождения OldBoy
+                    p.card-text Иллюстрация для использования в социальных сетях. Один год барбершопу ОлдБой.
+                    p.text-muted Форматы: JPEG, PSD, AI
+                    a.btn.btn-primary(href="") Скачать архив
+
+                .card-footer
+                    a.badge.badge-pill.badge-secondary(href="#") Веб
+                    a.badge.badge-pill.badge-secondary(href="#") Квадратные
+                    a.badge.badge-pill.badge-secondary(href="#") ВКонтакте
+
+            .card
+                img.card-img-top(src="img/oldboy-bd.jpg", alt="Card image cap")
+                .card-body
+                    h4.card-title День рождения OldBoy
+                    p.card-text Иллюстрация для использования в социальных сетях. Один год барбершопу ОлдБой.
+                    p.text-muted Форматы: JPEG, PSD, AI
+                    a.btn.btn-primary(href="") Скачать архив
+
+                .card-footer
+                    a.badge.badge-pill.badge-secondary(href="#") Веб
+                    a.badge.badge-pill.badge-secondary(href="#") Квадратные 
+                    a.badge.badge-pill.badge-secondary(href="#") ВКонтакте
+                    
+
+    nav
+        ul.pagination.justify-content-center
+            li.page-item.disabled
+                a.page-link(href="#") Предыдущая
+            li.page-item
+                a.page-link(href="") 1
+            li.page-item
+                a.page-link(href="") 2
+            li.page-item
+                a.page-link(href="") 3
+            li.page-item
+                a.page-link(href="") Следущая
+    
+    script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js", integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN", crossorigin="anonymous")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js", integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4", crossorigin="anonymous")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js", integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1", crossorigin="anonymous")

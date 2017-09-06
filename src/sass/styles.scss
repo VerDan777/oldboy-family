@@ -1,1 +1,18 @@
-@import 'normalize.css';
+// @import 'normalize.css';
+
+.container {
+    // box model
+    padding-top: 20px;
+}
+
+.badge {
+    // box model
+    margin-right: 5px;
+}
+
+nav {
+    // box model
+    padding: 40px 0;
+}
+
+@import "modules/card";
