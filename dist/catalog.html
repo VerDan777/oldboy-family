@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <title>Document</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-white justify-content-space-between"><a class="navbar-brand logo"><img src="./img/logo.png"/></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <form class="form-inline">
+        <input class="form-control" type="text" placeholder="Поиск" area-label="Поиск"/>
+        <button class="btn btn-outline-info button" type="submit">Искать</button>
+      </form>
+    </div>
+    <div class="socials"><a class="socials__link">
+        <svg class="socials__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="51.5px" height="51.5px">
+          <path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" opacity="1" fill="#d5a353" id="facebook" d="M25.500,0.500 C39.307,0.500 50.500,11.693 50.500,25.500 C50.500,39.307 39.307,50.500 25.500,50.500 C11.693,50.500 0.500,39.307 0.500,25.500 C0.500,11.693 11.693,0.500 25.500,0.500 Z"></path>
+          <path fill-rule="evenodd" fill="rgb(255, 255, 255)" id="facebook" d="M27.485,34.492 L23.487,34.492 L23.487,25.995 L21.489,25.995 L21.489,22.722 L23.487,22.722 L23.487,20.758 C23.487,18.088 24.615,16.499 27.819,16.499 L30.488,16.499 L30.488,19.773 L28.821,19.773 C27.573,19.773 27.490,20.231 27.490,21.083 L27.485,22.722 L30.507,22.722 L30.153,25.995 L27.485,25.995 L27.485,34.492 Z"></path>
+        </svg></a><a class="socials__link">
+        <svg class="socials__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="51.5px" height="51.5px">
+          <path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" opacity="1" fill="#d5a353" id="google" d="M25.500,0.500 C39.307,0.500 50.500,11.693 50.500,25.500 C50.500,39.307 39.307,50.500 25.500,50.500 C11.693,50.500 0.500,39.307 0.500,25.500 C0.500,11.693 11.693,0.500 25.500,0.500 Z"></path>
+          <path fill-rule="evenodd" fill="rgb(255, 255, 255)" id="google" d="M36.850,26.569 L36.850,29.180 L34.922,29.180 L34.922,26.569 L32.271,26.569 L32.271,24.671 L34.922,24.671 L34.922,22.060 L36.850,22.060 L36.850,24.671 L39.500,24.671 L39.500,26.569 L36.850,26.569 ZM23.115,33.499 C18.910,33.499 15.501,30.141 15.501,26.000 C15.501,21.858 18.910,18.500 23.115,18.500 C25.095,18.500 26.897,19.246 28.252,20.465 L26.007,22.630 C25.227,21.979 24.218,21.586 23.115,21.586 C20.640,21.586 18.633,23.562 18.633,26.000 C18.633,28.438 20.640,30.413 23.115,30.413 C25.030,30.413 26.664,29.231 27.305,27.566 L23.019,27.566 L23.019,24.433 L27.305,24.433 L30.537,24.433 L30.562,24.433 C30.672,24.939 30.729,25.462 30.729,26.000 C30.729,30.141 27.320,33.499 23.115,33.499 Z"></path>
+        </svg></a><a class="socials__link">
+        <svg class="socials__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="51.5px" height="51.5px">
+          <path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" opacity="1" fill="#d5a353" id="twitter" d="M25.500,0.500 C39.307,0.500 50.500,11.693 50.500,25.500 C50.500,39.307 39.307,50.500 25.500,50.500 C11.693,50.500 0.500,39.307 0.500,25.500 C0.500,11.693 11.693,0.500 25.500,0.500 Z"></path>
+          <path fill-rule="evenodd" fill="rgb(255, 255, 255)" id="twitter" d="M33.500,20.157 C32.875,20.439 32.202,20.629 31.497,20.714 C32.217,20.277 32.770,19.585 33.030,18.760 C32.355,19.164 31.610,19.459 30.815,19.616 C30.179,18.930 29.273,18.502 28.270,18.502 C26.344,18.502 24.782,20.082 24.782,22.036 C24.782,22.312 24.813,22.582 24.873,22.840 C21.975,22.693 19.405,21.286 17.685,19.148 C17.385,19.669 17.214,20.277 17.214,20.925 C17.214,22.150 17.830,23.233 18.765,23.866 C18.193,23.847 17.655,23.688 17.185,23.423 C17.185,23.438 17.185,23.453 17.185,23.467 C17.185,25.181 18.387,26.608 19.983,26.934 C19.690,27.014 19.383,27.058 19.064,27.058 C18.840,27.058 18.621,27.035 18.408,26.994 C18.852,28.397 20.140,29.420 21.666,29.449 C20.472,30.396 18.968,30.961 17.334,30.961 C17.053,30.961 16.775,30.944 16.502,30.912 C18.045,31.914 19.878,32.500 21.848,32.500 C28.262,32.500 31.770,27.114 31.770,22.445 C31.770,22.291 31.766,22.140 31.760,21.988 C32.441,21.489 33.033,20.867 33.500,20.159 L33.500,20.157 Z"></path>
+        </svg></a><a class="socials__link">
+        <svg class="socials__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="51.5px" height="51.5px">
+          <path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" opacity="1" fill="#d5a353" id="linkedin" d="M25.500,0.500 C39.307,0.500 50.500,11.693 50.500,25.500 C50.500,39.307 39.307,50.500 25.500,50.500 C11.693,50.500 0.500,39.307 0.500,25.500 C0.500,11.693 11.693,0.500 25.500,0.500 Z"></path>
+          <path fill-rule="evenodd" fill="rgb(255, 255, 255)" id="linkedin" d="M31.078,31.507 L31.078,26.095 C31.078,24.734 30.581,23.807 29.339,23.807 C28.393,23.807 27.828,24.432 27.582,25.037 C27.489,25.252 27.468,25.555 27.468,25.857 L27.468,31.507 L24.039,31.507 C24.039,31.507 24.084,22.338 24.039,21.390 L27.468,21.390 L27.468,22.823 C27.461,22.834 27.452,22.846 27.445,22.856 L27.468,22.856 L27.468,22.823 C27.923,22.134 28.736,21.152 30.558,21.152 C32.814,21.152 34.507,22.597 34.507,25.705 L34.507,31.507 L31.078,31.507 ZM20.426,20.008 L20.403,20.008 C19.252,20.008 18.509,19.231 18.509,18.259 C18.509,17.267 19.275,16.510 20.448,16.510 C21.622,16.510 22.344,17.267 22.365,18.259 C22.365,19.231 21.622,20.008 20.426,20.008 ZM22.140,31.507 L18.712,31.507 L18.712,21.390 L22.140,21.390 L22.140,31.507 Z"></path>
+        </svg></a><a class="socials__link">
+        <svg class="socials__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 496.158 496.158" style="enable-background:new 0 0 496.158 496.158;" xml:space="preserve" width="51.5px" height="51.5px">
+          <g>
+            <path class="active-path" fill="#D5A353" d="M496.158,248.085c0-137.022-111.069-248.082-248.075-248.082C111.07,0.003,0,111.063,0,248.085  c0,137.001,111.07,248.07,248.083,248.07C385.089,496.155,496.158,385.086,496.158,248.085z" data-original="#25B7D3" data-old_color="#d5a353" id="info" stroke="rgb(255, 255, 255)" stroke-linecap="butt" stroke-linejoin="miter" opacity="1"></path>
+            <path fill="#fff" d="M138.216,173.592c0-13.915,4.467-28.015,13.403-42.297c8.933-14.282,21.973-26.11,39.111-35.486  c17.139-9.373,37.134-14.062,59.985-14.062c21.238,0,39.99,3.921,56.25,11.755c16.26,7.838,28.818,18.495,37.683,31.97  c8.861,13.479,13.293,28.125,13.293,43.945c0,12.452-2.527,23.367-7.581,32.739c-5.054,9.376-11.062,17.469-18.018,24.279  c-6.959,6.812-19.446,18.275-37.463,34.388c-4.981,4.542-8.975,8.535-11.975,11.976c-3.004,3.443-5.239,6.592-6.702,9.447  c-1.466,2.857-2.603,5.713-3.406,8.57c-0.807,2.855-2.015,7.875-3.625,15.051c-2.784,15.236-11.501,22.852-26.147,22.852  c-7.618,0-14.028-2.489-19.226-7.471c-5.201-4.979-7.8-12.377-7.8-22.192c0-12.305,1.902-22.962,5.713-31.97  c3.808-9.01,8.861-16.92,15.161-23.73c6.296-6.812,14.794-14.904,25.488-24.28c9.373-8.202,16.15-14.392,20.325-18.567  c4.175-4.175,7.69-8.823,10.547-13.953c2.856-5.126,4.285-10.691,4.285-16.699c0-11.718-4.36-21.605-13.074-29.663  c-8.717-8.054-19.961-12.085-33.728-12.085c-16.116,0-27.981,4.065-35.596,12.195c-7.618,8.13-14.062,20.105-19.336,35.925  c-4.981,16.555-14.43,24.829-28.345,24.829c-8.206,0-15.127-2.891-20.764-8.679C141.035,186.593,138.216,180.331,138.216,173.592z   M245.442,414.412c-8.937,0-16.737-2.895-23.401-8.68c-6.667-5.784-9.998-13.877-9.998-24.279c0-9.229,3.22-16.991,9.668-23.291  c6.444-6.297,14.354-9.448,23.73-9.448c9.229,0,16.991,3.151,23.291,9.448c6.296,6.3,9.448,14.062,9.448,23.291  c0,10.255-3.296,18.312-9.888,24.17C261.7,411.481,254.084,414.412,245.442,414.412z" data-original="#FFFFFF" id="question"></path>
+          </g>
+        </svg></a></div>
+  </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-space-between">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link navbar-dark" href="index.html">Главная</a></li>
+        <li class="nav-item">
+          <div class="dropdown show"><a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Полиграфия</a>
+            <div class="dropdown-menu navbar-dark" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#">Штам для баннеров</a><a class="dropdown-item" href="#">Шрифты</a><a class="dropdown-item" href="#">Футболки</a><a class="dropdown-item" href="#">Флаеры</a><a class="dropdown-item" href="#">Стикеры</a><a class="dropdown-item" href="#">Сертификаты</a><a class="dropdown-item" href="#">Прайсы</a><a class="dropdown-item" href="#">Окна и двери</a><a class="dropdown-item" href="#">Наружная реклама</a><a class="dropdown-item" href="#">Наклейка</a><a class="dropdown-item" href="#">Конверты</a><a class="dropdown-item" href="#">Карты скидок</a><a class="dropdown-item" href="#">Карты лояльности</a><a class="dropdown-item" href="#">Информационный стенд</a><a class="dropdown-item" href="#">Зеркала</a><a class="dropdown-item" href="#">Вывески</a><a class="dropdown-item" href="#">Визитки</a></div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown show"><a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLinkLogo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Лого</a>
+            <div class="dropdown-menu navbar-dark" aria-labelledby="dropdownMenuLinkLogo"><a class="dropdown-item" href="#">Штам для баннеров</a><a class="dropdown-item" href="#">Штам для баннеров</a></div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown show"><a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuDocs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Документы</a>
+            <div class="dropdown-menu navbar-dark" aria-labelledby="dropdownMenuDocs"><a class="dropdown-item" href="#">Каталог стрижек</a><a class="dropdown-item" href="#">Журнал отчетности</a></div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown show"><a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuVideo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Видео</a>
+            <div class="dropdown-menu navbar-dark" aria-labelledby="dropdownMenuVideo"><a class="dropdown-item" href="#">Видео</a><a class="dropdown-item" href="#">Видео</a></div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown show"><a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuBanners" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Баннеры</a>
+            <div class="dropdown-menu navbar-dark" aria-labelledby="dropdownMenuBanners"><a class="dropdown-item" href="#">Баннеры-шапки для VK и FB</a><a class="dropdown-item" href="#">Баннеры поиск мастеров</a><a class="dropdown-item" href="#">Баннеры электронные сертификаты</a><a class="dropdown-item" href="#">Баннеры скидка студентам и школьникам</a><a class="dropdown-item" href="#">Баннеры подарочные сертификаты</a><a class="dropdown-item" href="#">Баннеры конкурс репостов</a><a class="dropdown-item" href="#">Баннеры День рождения OldBoy</a><a class="dropdown-item" href="#">Баннеры выпускник</a></div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown show"> <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLoad" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Загруженность</a>
+            <div class="dropdown-menu navbar-dark" aria-labelledby="dropdownMenuLoad"><a class="dropdown-item" href="#">Видео</a><a class="dropdown-item" href="#">Видео</a></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <nav class="breadcrumb"><a class="breadcrumb-item" href="#">Главная</a><a class="breadcrumb-item" href="#">Веб</a><span class="breadcrumb-item breadcrumb-item--active" href="#">Баннеры</span></nav>
+  </div>
+  <div class="container">
+    <div class="card-columns card-columns--catalog">
+      <div class="card"><img class="card-img-top" src="img/graduated.jpg" alt="Card image cap"/>
+        <div class="card-body">
+          <h4 class="card-title">Баннер Выпускник</h4>
+          <p class="card-text">Иллюстрация для использования в социальных сетях. Скидка 20% для выпускников.</p>
+          <p class="text-muted">Форматы: JPEG, PSD, AI</p><a class="btn btn-primary" href="">Скачать архив</a>
+        </div>
+        <div class="card-footer"><a class="badge badge-secondary" href="#">Веб</a><a class="badge badge-secondary" href="#">Квадратные</a><a class="badge badge-secondary" href="#">ВКонтакте</a><a class="badge badge-secondary" href="#">Баннер</a></div>
+      </div>
+      <div class="card"><img class="card-img-top" src="img/oldboy-bd.jpg" alt="Card image cap"/>
+        <div class="card-body">
+          <h4 class="card-title">День рождения OldBoy</h4>
+          <p class="card-text">Иллюстрация для использования в социальных сетях. Один год барбершопу ОлдБой.</p>
+          <p class="text-muted">Форматы: JPEG, PSD, AI</p><a class="btn btn-primary" href="">Скачать архив</a>
+        </div>
+        <div class="card-footer"><a class="badge badge-pill badge-secondary" href="#">Веб</a><a class="badge badge-pill badge-secondary" href="#">Квадратные</a><a class="badge badge-pill badge-secondary" href="#">ВКонтакте</a></div>
+      </div>
+      <div class="card"><img class="card-img-top" src="img/repost.jpg" alt="Card image cap"/>
+        <div class="card-body">
+          <h4 class="card-title">Конкурс репостов</h4>
+          <p class="card-text">Баннер "конкурс репостов" для соцсетей</p>
+          <p class="text-muted">Форматы: JPEG, AI</p><a class="btn btn-primary" href="">Скачать архив</a>
+        </div>
+        <div class="card-footer"><a class="badge badge-pill badge-secondary" href="#">Веб</a><a class="badge badge-pill badge-secondary" href="#">Квадратные </a><a class="badge badge-pill badge-secondary" href="#">ВКонтакте</a></div>
+      </div>
+      <div class="card"><img class="card-img-top" src="img/oldboy-bd.jpg" alt="Card image cap"/>
+        <div class="card-body">
+          <h4 class="card-title">День рождения OldBoy</h4>
+          <p class="card-text">Иллюстрация для использования в социальных сетях. Один год барбершопу ОлдБой.</p>
+          <p class="text-muted">Форматы: JPEG, PSD, AI</p><a class="btn btn-primary" href="">Скачать архив</a>
+        </div>
+        <div class="card-footer"><a class="badge badge-pill badge-secondary" href="#">Веб</a><a class="badge badge-pill badge-secondary" href="#">Квадратные</a><a class="badge badge-pill badge-secondary" href="#">ВКонтакте</a></div>
+      </div>
+      <div class="card"><img class="card-img-top" src="img/oldboy-bd.jpg" alt="Card image cap"/>
+        <div class="card-body">
+          <h4 class="card-title">День рождения OldBoy</h4>
+          <p class="card-text">Иллюстрация для использования в социальных сетях. Один год барбершопу ОлдБой.</p>
+          <p class="text-muted">Форматы: JPEG, PSD, AI</p><a class="btn btn-primary" href="">Скачать архив</a>
+        </div>
+        <div class="card-footer"><a class="badge badge-pill badge-secondary" href="#">Веб</a><a class="badge badge-pill badge-secondary" href="#">Квадратные</a><a class="badge badge-pill badge-secondary" href="#">ВКонтакте</a></div>
+      </div>
+      <div class="card"><img class="card-img-top" src="img/oldboy-bd.jpg" alt="Card image cap"/>
+        <div class="card-body">
+          <h4 class="card-title">День рождения OldBoy</h4>
+          <p class="card-text">Иллюстрация для использования в социальных сетях. Один год барбершопу ОлдБой.</p>
+          <p class="text-muted">Форматы: JPEG, PSD, AI</p><a class="btn btn-primary" href="">Скачать архив</a>
+        </div>
+        <div class="card-footer"><a class="badge badge-pill badge-secondary" href="#">Веб</a><a class="badge badge-pill badge-secondary" href="#">Квадратные</a><a class="badge badge-pill badge-secondary" href="#">ВКонтакте</a></div>
+      </div>
+      <div class="card"><img class="card-img-top" src="img/oldboy-bd.jpg" alt="Card image cap"/>
+        <div class="card-body">
+          <h4 class="card-title">День рождения OldBoy</h4>
+          <p class="card-text">Иллюстрация для использования в социальных сетях. Один год барбершопу ОлдБой.</p>
+          <p class="text-muted">Форматы: JPEG, PSD, AI</p><a class="btn btn-primary" href="">Скачать архив</a>
+        </div>
+        <div class="card-footer"><a class="badge badge-pill badge-secondary" href="#">Веб</a><a class="badge badge-pill badge-secondary" href="#">Квадратные</a><a class="badge badge-pill badge-secondary" href="#">ВКонтакте</a></div>
+      </div>
+      <div class="card"><img class="card-img-top" src="img/oldboy-bd.jpg" alt="Card image cap"/>
+        <div class="card-body">
+          <h4 class="card-title">День рождения OldBoy</h4>
+          <p class="card-text">Иллюстрация для использования в социальных сетях. Один год барбершопу ОлдБой.</p>
+          <p class="text-muted">Форматы: JPEG, PSD, AI</p><a class="btn btn-primary" href="">Скачать архив</a>
+        </div>
+        <div class="card-footer"><a class="badge badge-pill badge-secondary" href="#">Веб</a><a class="badge badge-pill badge-secondary" href="#">Квадратные</a><a class="badge badge-pill badge-secondary" href="#">ВКонтакте</a></div>
+      </div>
+      <div class="card"><img class="card-img-top" src="img/oldboy-bd.jpg" alt="Card image cap"/>
+        <div class="card-body">
+          <h4 class="card-title">День рождения OldBoy</h4>
+          <p class="card-text">Иллюстрация для использования в социальных сетях. Один год барбершопу ОлдБой.</p>
+          <p class="text-muted">Форматы: JPEG, PSD, AI</p><a class="btn btn-primary" href="">Скачать архив</a>
+        </div>
+        <div class="card-footer"><a class="badge badge-pill badge-secondary" href="#">Веб</a><a class="badge badge-pill badge-secondary" href="#">Квадратные</a><a class="badge badge-pill badge-secondary" href="#">ВКонтакте</a></div>
+      </div>
+    </div>
+  </div>
+  <nav>
+    <ul class="pagination justify-content-center">
+      <li class="page-item disabled page-item--prev"><a class="page-link" href="#">Предыдущая</a></li>
+      <li class="page-item"><a class="page-link" href="">1</a></li>
+      <li class="page-item"><a class="page-link" href="">2</a></li>
+      <li class="page-item"><a class="page-link" href="">3</a></li>
+      <li class="page-item page-item--next"><a class="page-link" href="">Следующая</a></li>
+    </ul>
+  </nav>
+  <footer class="site-footer navbar nabar-expand-lg bg-white"><a class="navbar-brand logo"><img src="./img/logo.png"/></a>
+    <form class="form-inline">
+      <input class="form-control" type="email" placeholder="Подпишитесь на рассылку" area-label="Поиск"/>
+      <button class="btn btn-outline-info button" type="submit">Отправить</button>
+    </form>
+    <div class="socials socials--footer"><a class="socials__link">
+        <svg class="socials__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="51.5px" height="51.5px">
+          <path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" opacity="1" fill="#d5a353" id="facebook" d="M25.500,0.500 C39.307,0.500 50.500,11.693 50.500,25.500 C50.500,39.307 39.307,50.500 25.500,50.500 C11.693,50.500 0.500,39.307 0.500,25.500 C0.500,11.693 11.693,0.500 25.500,0.500 Z"></path>
+          <path fill-rule="evenodd" fill="rgb(255, 255, 255)" id="facebook" d="M27.485,34.492 L23.487,34.492 L23.487,25.995 L21.489,25.995 L21.489,22.722 L23.487,22.722 L23.487,20.758 C23.487,18.088 24.615,16.499 27.819,16.499 L30.488,16.499 L30.488,19.773 L28.821,19.773 C27.573,19.773 27.490,20.231 27.490,21.083 L27.485,22.722 L30.507,22.722 L30.153,25.995 L27.485,25.995 L27.485,34.492 Z"></path>
+        </svg></a><a class="socials__link">
+        <svg class="socials__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="51.5px" height="51.5px">
+          <path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" opacity="1" fill="#d5a353" id="google" d="M25.500,0.500 C39.307,0.500 50.500,11.693 50.500,25.500 C50.500,39.307 39.307,50.500 25.500,50.500 C11.693,50.500 0.500,39.307 0.500,25.500 C0.500,11.693 11.693,0.500 25.500,0.500 Z"></path>
+          <path fill-rule="evenodd" fill="rgb(255, 255, 255)" id="google" d="M36.850,26.569 L36.850,29.180 L34.922,29.180 L34.922,26.569 L32.271,26.569 L32.271,24.671 L34.922,24.671 L34.922,22.060 L36.850,22.060 L36.850,24.671 L39.500,24.671 L39.500,26.569 L36.850,26.569 ZM23.115,33.499 C18.910,33.499 15.501,30.141 15.501,26.000 C15.501,21.858 18.910,18.500 23.115,18.500 C25.095,18.500 26.897,19.246 28.252,20.465 L26.007,22.630 C25.227,21.979 24.218,21.586 23.115,21.586 C20.640,21.586 18.633,23.562 18.633,26.000 C18.633,28.438 20.640,30.413 23.115,30.413 C25.030,30.413 26.664,29.231 27.305,27.566 L23.019,27.566 L23.019,24.433 L27.305,24.433 L30.537,24.433 L30.562,24.433 C30.672,24.939 30.729,25.462 30.729,26.000 C30.729,30.141 27.320,33.499 23.115,33.499 Z"></path>
+        </svg></a><a class="socials__link">
+        <svg class="socials__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="51.5px" height="51.5px">
+          <path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" opacity="1" fill="#d5a353" id="twitter" d="M25.500,0.500 C39.307,0.500 50.500,11.693 50.500,25.500 C50.500,39.307 39.307,50.500 25.500,50.500 C11.693,50.500 0.500,39.307 0.500,25.500 C0.500,11.693 11.693,0.500 25.500,0.500 Z"></path>
+          <path fill-rule="evenodd" fill="rgb(255, 255, 255)" id="twitter" d="M33.500,20.157 C32.875,20.439 32.202,20.629 31.497,20.714 C32.217,20.277 32.770,19.585 33.030,18.760 C32.355,19.164 31.610,19.459 30.815,19.616 C30.179,18.930 29.273,18.502 28.270,18.502 C26.344,18.502 24.782,20.082 24.782,22.036 C24.782,22.312 24.813,22.582 24.873,22.840 C21.975,22.693 19.405,21.286 17.685,19.148 C17.385,19.669 17.214,20.277 17.214,20.925 C17.214,22.150 17.830,23.233 18.765,23.866 C18.193,23.847 17.655,23.688 17.185,23.423 C17.185,23.438 17.185,23.453 17.185,23.467 C17.185,25.181 18.387,26.608 19.983,26.934 C19.690,27.014 19.383,27.058 19.064,27.058 C18.840,27.058 18.621,27.035 18.408,26.994 C18.852,28.397 20.140,29.420 21.666,29.449 C20.472,30.396 18.968,30.961 17.334,30.961 C17.053,30.961 16.775,30.944 16.502,30.912 C18.045,31.914 19.878,32.500 21.848,32.500 C28.262,32.500 31.770,27.114 31.770,22.445 C31.770,22.291 31.766,22.140 31.760,21.988 C32.441,21.489 33.033,20.867 33.500,20.159 L33.500,20.157 Z"></path>
+        </svg></a><a class="socials__link">
+        <svg class="socials__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="51.5px" height="51.5px">
+          <path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" opacity="1" fill="#d5a353" id="linkedin" d="M25.500,0.500 C39.307,0.500 50.500,11.693 50.500,25.500 C50.500,39.307 39.307,50.500 25.500,50.500 C11.693,50.500 0.500,39.307 0.500,25.500 C0.500,11.693 11.693,0.500 25.500,0.500 Z"></path>
+          <path fill-rule="evenodd" fill="rgb(255, 255, 255)" id="linkedin" d="M31.078,31.507 L31.078,26.095 C31.078,24.734 30.581,23.807 29.339,23.807 C28.393,23.807 27.828,24.432 27.582,25.037 C27.489,25.252 27.468,25.555 27.468,25.857 L27.468,31.507 L24.039,31.507 C24.039,31.507 24.084,22.338 24.039,21.390 L27.468,21.390 L27.468,22.823 C27.461,22.834 27.452,22.846 27.445,22.856 L27.468,22.856 L27.468,22.823 C27.923,22.134 28.736,21.152 30.558,21.152 C32.814,21.152 34.507,22.597 34.507,25.705 L34.507,31.507 L31.078,31.507 ZM20.426,20.008 L20.403,20.008 C19.252,20.008 18.509,19.231 18.509,18.259 C18.509,17.267 19.275,16.510 20.448,16.510 C21.622,16.510 22.344,17.267 22.365,18.259 C22.365,19.231 21.622,20.008 20.426,20.008 ZM22.140,31.507 L18.712,31.507 L18.712,21.390 L22.140,21.390 L22.140,31.507 Z"></path>
+        </svg></a></div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>

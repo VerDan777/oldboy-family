@@ -1,0 +1,15 @@
+.logo {
+    // box model
+    height: 80px;
+    padding: 10px 30px;
+
+    &__img {
+        // box model
+        width: 100%;
+    }
+
+    img {
+        // box model
+        height: 100%;
+    }
+}

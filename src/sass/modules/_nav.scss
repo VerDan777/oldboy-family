@@ -1,0 +1,51 @@
+nav {
+    // box model
+    padding: 40px 0;
+}
+
+.navbar {
+    box-shadow: 0px 7px 16px -8px rgba(0,0,0,0.75);
+}
+
+.nav-item {
+    // box model
+    padding-right: 45px;
+
+    
+
+    &:last-child {
+        // box model
+        padding-right: 0;
+    }
+}
+
+.nav-link {
+    // typography
+    color: #fff !important;
+    font-family: 'RexBold', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.25rem;
+
+    &:hover {
+        transition: 0.3s ease-in-out all;
+        color:#fff !important;
+    }
+}
+
+.navbar-nav {
+    padding-left: 25px;
+}
+
+.navbar-dark {
+    background-color: #d5a353 !important;
+    background-color: #222 !important;
+}
+
+.nav-tabs {
+    display: flex !important;
+    justify-content: center !important;
+    margin-bottom: 50px !important;
+    border: none !important;
+}

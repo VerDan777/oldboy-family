@@ -1,0 +1,49 @@
+.socials {
+    display: flex;
+    padding-bottom: 0px;
+
+    &--footer {
+        justify-content: flex-end;
+    }
+
+    &__link {
+        padding-right: 10px;
+        
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+}
+
+.socials__svg:hover #facebook {
+    cursor: pointer;
+    fill: #fff;
+    stroke: #d5a353;
+    transition: 0.3s ease-in-out all;
+}
+
+.socials__svg:hover #google {
+    cursor: pointer;
+    fill: #fff;
+    stroke: #d5a353;
+    transition: 0.3s ease-in-out all;
+}
+
+.socials__svg:hover #twitter {
+    cursor: pointer;
+    fill: #fff;
+    stroke: #d5a353;
+    transition: 0.3s ease-in-out all;
+}
+
+.socials__svg:hover #linkedin {
+    cursor: pointer;
+    fill: #fff;
+    stroke: #d5a353;
+    transition: 0.3s ease-in-out all;
+}
+.socials__svg:hover #info {
+    cursor: pointer;
+    fill: #d5a353;
+
+}

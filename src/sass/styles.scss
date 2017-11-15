@@ -1,18 +1,131 @@
-// @import 'normalize.css';
+// Normalize.css
+// @import "normalize.css";
 
-.container {
-    // box model
-    padding-top: 20px;
-}
+// Fonts
+@import "./base/_fonts";
+
+// // Base
+@import "./base/_vars";
+@import "./base/_mixins";
+@import "./base/_globals";
+
+// Modules
+@import "./modules/_container";
+@import "./modules/_logo";
+@import "./modules/_main-menu";
+@import "./modules/_card";
+@import "./modules/_nav";
+// @import "./modules/_hero";
+@import "./modules/_form";
+@import "./modules/_button";
+@import "./modules/_socials";
+@import "./modules/_site-footer";
+
 
 .badge {
     // box model
     margin-right: 5px;
 }
-
-nav {
-    // box model
-    padding: 40px 0;
+.hero {
+    height: 700px;
+    margin-bottom: 50px;
 }
 
-@import "modules/card";
+.socials {
+    display: flex;
+    padding-bottom: 0px;
+
+    &--footer {
+        justify-content: flex-end;
+    }
+
+    &__link {
+        padding-right: 10px;
+        
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+}
+
+.socials__svg:hover #facebook {
+    cursor: pointer;
+    fill: #fff;
+    stroke: #d5a353;
+    transition: 0.3s ease-in-out all;
+}
+
+.socials__svg:hover #google {
+    cursor: pointer;
+    fill: #fff;
+    stroke: #d5a353;
+    transition: 0.3s ease-in-out all;
+}
+
+.socials__svg:hover #twitter {
+    cursor: pointer;
+    fill: #fff;
+    stroke: #d5a353;
+    transition: 0.3s ease-in-out all;
+}
+
+.socials__svg:hover #linkedin {
+    cursor: pointer;
+    fill: #fff;
+    stroke: #d5a353;
+    transition: 0.3s ease-in-out all;
+}
+.socials__svg:hover #info {
+    cursor: pointer;
+    fill: #fff;
+    stroke: #d5a353;
+    stroke-width: 1px;
+    transition: 0.3s ease-in-out all;
+    
+}
+
+.socials__svg:hover #question {
+    fill: #d5a353;
+    
+}
+
+.page-item {
+    border: 1px solid $accent !important;
+    
+    
+}
+.pagination {
+    border-radius: 0.25rem;
+}
+.page-link {
+    color: #222;
+    font-family: $mainFont;
+    border: none !important;
+    
+
+    &:hover, &:focus {
+        background-color: $accent;
+        color: $white;
+        transition: 0.3s ease-in-out all;
+    }
+}
+.breadcrumb {
+    background-color: #fff;
+}
+.breadcrumb-item {
+    color: #222;
+    font-family: $mainFont;
+
+    &:hover, &:focus {
+        color: $accent;
+        text-decoration: underline;
+    }
+
+    &--active {
+        text-decoration: none;
+        color: #222;
+    }
+}
+
+
+

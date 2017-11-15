@@ -13,7 +13,7 @@ gulp.task('watch', () => {
         gulp.start('pugChanged');
     })
 
-    watch('./src/**/*.scss', () => {
+    watch('./src/sass/**/*.scss', () => {
         gulp.start('cssInject');
     })
 });
